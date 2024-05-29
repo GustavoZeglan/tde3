@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
+.home {
+    padding: 0 72px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e3a93b;
+
+    .info {
+        width: 60%;
+        color: #212121;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+
+        .texts {
+            p {
+                font-weight: 500;
+            }
+        }
+
+    }
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.qualitys {
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    justify-content: space-between;
+    padding-block: 24px;
+
+    .pricinpal-info {
+
+        p {
+            font-weight: 500;
+        }
+
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+    }
+
+    .container {
+        display: flex;
+        padding: 0 72px;
+        align-items: start;
+        justify-content: center;
+        gap: 40px;
+
+        .item {
+            text-align: center;
+            width: 33.3%;
+            .title {
+                font-size: 18px;
+                font-weight: 800;
+            }
+
+            .content {
+                text-align: justify;
+            }
+        }
+
+
+    }
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+footer {
+    margin-top: 100px;
+    padding-block: 16px;
+    background-color: #e3a93b;
+    text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.logo {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+
+    img {
+        width: 16%;
+    }
+
+    h3 {
+        color: #212121;
+    }
 }
 
-.App-link {
-  color: #61dafb;
-}
+.btn {
+    padding: 8px 16px;
+    border-radius: 8px;
+    background: #156aa4;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.5s;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    &:hover {
+        background: #1b5782;
+    }
 }
